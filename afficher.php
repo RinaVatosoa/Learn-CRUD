@@ -21,7 +21,6 @@
                 die("Connection failed: " . $conn->connect_error);
             }
 
-             // Attempt select query execution
              $sql = "SELECT * FROM information";
 
              if($result = mysqli_query($conn, $sql)){
@@ -59,7 +58,6 @@
                          }
                          echo "</tbody>";                            
                      echo "</table>";
-                     // Free result set
                      mysqli_free_result($result);
                  } else{
                      echo "<p class='lead'><em>No records were found.</em></p>";
@@ -67,9 +65,7 @@
              } else{
                  echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
              }
-
             $conn->close(); 
-
         ?>
 
         <!--liens javascript-->
