@@ -75,10 +75,10 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 <body>
     <div class="wrapper">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="page-header">
-                        <h3 class="text-secondary">Delete information</h3>
+            <div class="row text-center">
+                <div class="col-6 text-center">
+                    <div class="page-header"><br/>
+                        <h3 class="text-primary">Delete information</h3>
                     </div>
                     <form action="delete.php" method="post">
                         <div class="alert alert-danger" role="alert">

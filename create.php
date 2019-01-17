@@ -31,7 +31,7 @@
             <div class="form-group row">
                 <label for="inputPhone" class="col-sm-2 col-form-label">Phone number</label>
                 <div class="col-sm-4">
-                <input type="text" name="phone" class="form-control" id="inputLastname" 
+                <input type="phone" name="phone" class="form-control" id="inputLastname" 
                     placeholder="Your phone number">
                 </div>
             </div>

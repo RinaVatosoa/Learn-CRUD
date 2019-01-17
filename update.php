@@ -181,9 +181,9 @@
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="page-header">
-                        <h2>Update information</h2>
+                <div class="col-6">
+                    <div class="page-header"><br/>
+                        <h2 class="text-primary">Update information</h2>
                     </div>
                     <p>Please edit the input values and submit to update the information.</p>
                     <form action="update.php" method="post">
@@ -214,7 +214,7 @@
                                 echo (!empty($_FILES)) ? 'has-error' : ''; 
                             ?>">
                             <label>E-mail</label>
-                            <input type="text" name="email" class="form-control" value="
+                            <input type="email" name="email" class="form-control" value="
                             <?php 
                                 echo $_email; 
                             ?>">
@@ -225,7 +225,7 @@
                                 echo (!empty($_FILES)) ? 'has-error' : ''; 
                             ?>">
                             <label>Phone number</label>
-                            <input type="text" name="phone" class="form-control" value="
+                            <input type="number" name="phone" class="form-control" value="
                             <?php 
                                 echo $_phone; 
                             ?>">
